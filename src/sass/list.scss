@@ -92,10 +92,11 @@
             display: flex;
             flex-wrap: wrap;
             margin-top: .16rem;
-            >div{
+            >a{
                 width: 4.973333rem;
                 height: 6.96rem;
                 margin-bottom: .906667rem;
+                display: block;
                 >img{
                     width: 4.973333rem;
                     margin-bottom: .186667rem;
@@ -134,7 +135,7 @@
                     }
                 }
             }
-            >div:nth-child(odd){
+            >a:nth-child(odd){
                 margin-right: .053333rem;
             }
         }

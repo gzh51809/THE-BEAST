@@ -103,6 +103,7 @@ class App extends Component {
             <Route path="/search" component={Search}/>
             <Route path="/shopcart" component={Shopcart}/>
             <Route path="/list" component={List}/>
+            <Route path="/list/:id" component={List}/>
             <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
             <Route path="/detail" component={Detail}/>

@@ -14,7 +14,7 @@ class List extends Component{
             lists : []
         }
         // this绑定
-        this.godetail = this.godetail.bind(this);
+        // this.godetail = this.godetail.bind(this);
     }
     render(){
         return(
@@ -48,15 +48,15 @@ class List extends Component{
                     <div className="lists">
                     {
                         this.state.lists.map(item=>{
-                            return <div key={item.name} onClick={this.godetail}>
-                                <img src={item.featureImage} alt={item.name} className={item.id}/>
-                                <p className={item.id}>{item.brand.name}</p>
-                                <p className={item.id}>{item.name}</p>
-                                <div className={item.id}>
-                                    <p className={item.id}>￥{item.price}</p>
-                                    <p className={item.id}>.0</p>
+                            return <Link key={item.name} to={{pathname:'/detail/'+item.id}}>
+                                <img src={item.featureImage} alt={item.name}/>
+                                <p>{item.brand.name}</p>
+                                <p>{item.name}</p>
+                                <div>
+                                    <p>￥{item.price}</p>
+                                    <p>.0</p>
                                 </div>
-                            </div>
+                            </Link>
                         })
                     }
                     </div> 
@@ -88,9 +88,6 @@ class List extends Component{
                 lists : lis
             });
         })
-    }
-    godetail(){
-
     }
 }
 
