@@ -1,0 +1,267 @@
+.Home{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 1.333333rem;
+    // 搜索按钮
+    .search{
+        width: .533333rem;
+        height: .533333rem;
+        font-size: .533333rem;
+        line-height: .533333rem;
+        color: #2b2b2b;
+        position: absolute;
+        top: .426667rem;
+        left: .426667rem;
+        z-index: 2;
+    }
+    // 购物车
+    .shoppingcar{
+        width: .533333rem;
+        height: .533333rem;
+        font-size: .533333rem;
+        line-height: .533333rem;
+        color: #2b2b2b;
+        position: absolute;
+        top: .426667rem;
+        right: .426667rem;
+        z-index: 2;
+    }
+    // "/"
+    >span:nth-child(3){
+        position: absolute;
+        top: 12.746667rem;
+        right: .746667rem;
+        line-height: .32rem;
+        font-size: .32rem;
+        color: #fff;
+        z-index: 2;
+        font-weight: 600;
+    }
+    // 轮播图
+    .home_banner{
+        width: 100%;
+        height: 13.333333rem;
+    }
+    //新品上市
+    .new_product{
+        width: 100%;
+        height: 6.4rem;
+        padding: .746667rem 0 0;
+        >div:nth-child(1){
+            font-size: .64rem;
+            line-height: .746667rem;
+            text-align: center;
+            color: #000;
+            margin-bottom: .32rem;
+        }
+        >div:nth-child(2){
+            height: 3.813333rem;
+            display: flex;
+            align-items: center;
+            overflow: auto;
+            >div{
+                width: 2.933333rem;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                maring-right: .053333rem;
+                display: flex;
+                flex-direction: column;
+                >img{
+                    height: 3.066667rem;
+                }
+                >span{
+                    margin-top: .186667rem;
+                    display: block;
+                    width: 2.933333rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    text-align: center;
+                    color: #000;
+                    font-size: .32rem;
+                }
+            }
+        }
+    }
+    //广告轮播图
+    .adv{
+        height: 2.96rem;
+    }
+    //图片1
+    .pic_one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        >div{
+            width: 100%;
+            height: 10rem;
+            position: relative;
+            >img{
+                height: 10rem;
+            }
+            .smallBroke{
+                width: .266667rem;
+                height: .4rem;
+                position: absolute;
+                top: .533333rem;
+                left: 0;
+                background: #58bc58bc;
+            }
+            >p:nth-child(3){
+                margin: 0;
+                font-size: .4rem;
+                font-weight: 700;
+                position: absolute;
+                top: .426667rem;
+                left: .533333rem;
+            }
+            >p:nth-child(4){
+                margin: 0;
+                font-size: .4rem;
+                font-weight: 700;
+                position: absolute;
+                top: 1.066667rem;
+                left: .533333rem;
+            }
+        }
+    }
+    //gif图
+    .pic_gif{
+        width: 100%;
+        height: 10rem;
+        >img{
+            height: 10rem;
+        }
+    }
+    //图片2
+    .pic_two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        >div{
+            width: 100%;
+            height: 10rem;
+            position: relative;
+            >img{
+                height: 10rem;
+            }
+            .smallBroke{
+                width: .266667rem;
+                height: .4rem;
+                position: absolute;
+                top: .533333rem;
+                left: 0;
+                background: #58bc58bc;
+            }
+            >p:nth-child(3){
+                margin: 0;
+                font-size: .4rem;
+                font-weight: 700;
+                position: absolute;
+                top: .426667rem;
+                left: .533333rem;
+            }
+            >p:nth-child(4){
+                margin: 0;
+                font-size: .4rem;
+                font-weight: 700;
+                position: absolute;
+                top: 1.066667rem;
+                left: .533333rem;
+            }
+        }
+        >div:nth-child(2){
+            height: 13.333333rem;
+            >img{
+                height: 13.333333rem;
+            }
+            >div{
+                display: none;
+            }
+        }
+    }
+    .pic_two>div:nth-child(1){
+        height: 13.333333rem;
+        >img{
+            height: 13.333333rem;
+        }
+        >div{
+            display: none;
+        }
+    }
+    //图片3
+    .pic_three{
+        width: 100%;
+        height: 2.373333rem;
+        >img{
+            height: 2.373333rem;
+        }
+    }
+    //图片4
+    .pic_four{
+        width: 100%;
+        height: 6.4rem;
+        >img{
+            height: 2.117333rem;
+        }
+    }
+    //图片5
+    .pic_five{
+        width: 100%;
+        height: 2.4rem;
+        >img{
+            height: 2.4rem;
+            margin-top: -0.053333rem;
+        }
+    }
+    //图片6
+    .pic_six{
+        width: 100%;
+        height: 6.666667rem;
+        >img{
+            height: 6.666667rem;
+        }
+    }
+}
+
+//swiper样式
+.swiper-pagination{
+    color: transparent;
+}
+.swiper-container{
+    width: 100%;
+    height: 13.333333rem;
+    position: relative;
+}
+.swiper-pagination-current{
+    position: absolute;
+    bottom: 0;
+    right: .906667rem;
+    line-height: .8rem;
+    font-size: .8rem;
+    color: #fff;
+    z-index: 1;
+    font-weight: 600;
+}
+.swiper-pagination-total{
+    position: absolute;
+    bottom: 0;
+    right: .48rem;
+    line-height: .32rem;
+    font-size: .32rem;
+    color: #fff;
+    z-index: 1;
+    font-weight: 600;
+}
+.swiper-slide>img{
+    width: 100%;
+    height: 13.333333rem;
+}
+.adv .swiper-slide>img{
+    height: 2.96rem;
+}
+.adv .swiper-container{
+    height: 2.96rem;
+}

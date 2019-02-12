@@ -1,0 +1,92 @@
+.category{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .search_{
+        height: 1.573333rem;
+        padding-bottom: .32rem;
+        display: flex;
+        position: relative;
+        .sear{
+            width: 8.133333rem;
+            height: 1.2rem;
+            border-bottom: .053333rem solid #000;
+            margin-left: .533333rem;
+            display: flex;
+            align-items: center;
+            >div:nth-child(1){
+                font-size: .426667rem;
+                color: #000;
+            }
+            >div:nth-child(2){
+                padding-left: .32rem;
+                font-weight: 700;
+                font-size: .373333rem;
+                color: #000;
+            }
+        }
+        .icon{
+            font-size: .48rem;
+            position: absolute;
+            top: .426667rem;
+            right: .426667rem;
+            color: #2b2b2b;
+        }
+    }
+    .content{
+        flex: 1;
+        display: flex;
+        .cate{
+            width: 3.066667rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 .4rem 0 .533333rem;
+            >div{
+                width: 2.133333rem;
+                height: 1.226667rem;
+                >p{
+                    display: inline;
+                    line-height: 1.226667rem;
+                    font-weight: 700;
+                    font-size: .4rem;
+                    color: #000;
+                    margin: 0;
+                    padding-bottom: .106667rem;
+                }
+                .sele{
+                    font-size: .533333rem;
+                    box-sizing: border-box;
+                    border-bottom: .08rem solid #000;
+                }
+            }
+            
+        }
+        .cont{
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 1.333333rem;
+            >div{
+                width: 3.44rem;
+                height: 4.586667rem;
+                position: relative;
+                margin-bottom: .053333rem;
+                .contpic{
+                    width: 3.44rem;
+                    height: 4.586667rem;
+                    margin-bottom: .053333rem;
+                }
+                .conttext{
+                    position: absolute;
+                    top: .213333rem;
+                    left: .373333rem;
+                    color: #fff;
+                    font-size: .373333rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
